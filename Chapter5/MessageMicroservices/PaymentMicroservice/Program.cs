@@ -4,7 +4,7 @@ using MessageContracts;
 
 var busControl = Bus.Factory.CreateUsingRabbitMq(cfg =>
 {
-    cfg.Host("localhost");
+    cfg.Host("192.168.66.129");
     cfg.ReceiveEndpoint("payment-service", e =>
     {
         e.Consumer<InvoiceCreatedConsumer>(c =>

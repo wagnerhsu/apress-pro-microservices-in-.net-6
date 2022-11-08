@@ -7,7 +7,7 @@ await Task.Delay(3000); //because the consumers need to start first
 
 var busControl = Bus.Factory.CreateUsingRabbitMq(cfg =>
 {
-    cfg.Host("localhost");
+    cfg.Host("192.168.66.129");
     cfg.ReceiveEndpoint("invoice-service-created", e =>
     {
         e.UseInMemoryOutbox();

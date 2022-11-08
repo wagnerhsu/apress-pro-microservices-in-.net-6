@@ -16,13 +16,13 @@
     <ProjectReference Include="..\..\GoogleMapInfo\GoogleMapInfo.csproj" />
   </ItemGroup>
 
-	<ItemGroup>
-		<Protobuf Include="Protos\distance.proto" GrpcServices="Server" />
-	</ItemGroup>
+    <ItemGroup>
+        <Protobuf Include="Protos\distance.proto" GrpcServices="Server" />
+    </ItemGroup>
 
-	<ItemGroup>
-		<Folder Include="Protos\" />
-	</ItemGroup>
+    <ItemGroup>
+        <Folder Include="Protos\" />
+    </ItemGroup>
 
 
 </Project>
